@@ -158,9 +158,9 @@ $payData = [
 //不同支付方式，需传入参数
 if ($payData['trade_type'] == 'JSAPI') {
     $payData['openid'] = ''; //公众号支付 用户openid
-}elseif($payData['trade_type'] == 'NATIVE'){
+} elseif ($payData['trade_type'] == 'NATIVE') {
     $payData['expire'] = ''; //当面付 二维码过期时间
-}elseif($payData['trade_type'] == 'MWEB'){
+} elseif ($payData['trade_type'] == 'MWEB') {
     $payData['wap_url'] = ''; //H5支付 WAP网站URL地址
     $payData['wap_name'] = ''; //H5支付 WAP网站名
 }
